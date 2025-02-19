@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .bg-img1 {
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 15px;
+        }
+
+        .hover-icon:hover {
+            color: #007bff;
+            transform: scale(1.1);
+        }
+
+        .contact-container {
+            background: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .map {
+            height: 350px;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b>Book</b>Hives</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.php">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+				<div class="d-flex">
+					<a href="../seller/seller_dashboard.php "><i class="bi bi-coin margin-right-6 me-4 hover-icon"></i></a>
+					<a href="my_purchases.php"><i class="bi bi-bag-fill  margin-right-6 me-4 hover-icon"></i></a>
+						  <!-- <a href="user_signup.php"><i class="bi bi-person-circle margin-right-6 me-4 hover-icon  "> </i> </a>      -->
+					  <a href="user_signup.php"><i class="bi bi-person-circle margin-right-6 me-4 hover-icon  "> </i> </a>     
+			  
+					</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-img1 text-center" style="background-image: url('images/contact.png');">
+        <h2 class="display-5">Contact Us</h2>
+    </section>
+
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 contact-container">
+                <h4 class="text-center mb-4">Send Us A Message</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row text-center mt-5">
+            <div class="col-md-4">
+                <i class="fa-solid fa-phone fs-1 text-primary mb-3"></i>
+                <h5>Let's Talk</h5>
+                <p>+1 800 1236879</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-solid fa-envelope fs-1 text-primary mb-3"></i>
+                <h5>Sales Support</h5>
+                <p>contact@bookhives.com</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126919.94524321534!2d-73.94972103863086!3d40.7026782027805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25af4d7c45511%3A0x87a4c4cf9d2c6f97!2sBrooklyn%2C%20NY%2011237!5e0!3m2!1sen!2sus!4v1667639128932!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
